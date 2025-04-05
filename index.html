@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            The Element Game - Questions
+        </title>
+    </head>
+    <body>
+        <div class="question" id="question-box">
+        </div>
+        <div class="feedback" id="feedback">
+        </div>
+        <button id="next-btn" class="button" onclick="showNextQuestion()">Next</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="periodicDiv">
+            <div class="divMain">
+                <div class="div" id="Dblue" data-symbol="H">
+                    <section class="num"> &nbsp;1</section> 
+                    <p class="name">H</p>
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="purple" data-symbol="He">
+                    <section class="num"> &nbsp;2</section>
+                    <p class="name">He</p>
+                </div>
+                <div class="div" id="red" data-symbol="Li">
+                    <section class="num"> &nbsp;3</section>
+                    <p class="name">Li</p>
+                </div>
+                <div class="div" id="orange" data-symbol="Be">
+                    <section class="num"> &nbsp;4</section> 
+                    <p class="name">Be</p>
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="lightB" data-symbol="B">
+                    <section class="num"> &nbsp;5</section>
+                    <p class="name">B</p> 
+                </div>
+                <div class="div" id="Dblue" data-symbol="C">
+                    <section class="num"> &nbsp;6</section> 
+                    <p class="name">C</p>
+                </div>
+                <div class="div" id="Dblue" data-symbol="N">
+                    <section class="num"> &nbsp;7</section> 
+                    <p class="name">N</p>
+                </div>
+                <div class="div" id="Dblue" data-symbol="O">
+                    <section class="num"> &nbsp;8</section> 
+                    <p class="name">O</p>
+                </div>
+                <div class="div" id="purple" data-symbol="F">
+                    <section class="num"> &nbsp;9</section> 
+                    <p class="name">F</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Ne">
+                    <section class="num"> &nbsp;10</section>
+                    <p class="name">Ne</p> 
+                </div>
+                <div class="div" id="red" data-symbol="Na">
+                    <section class="num"> &nbsp;11</section>
+                    <p class="name">Na</p> 
+                </div>
+                <div class="div" id="orange"data-symbol="Mg">
+                    <section class="num"> &nbsp;12</section>
+                    <p class="name">Mg</p> 
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="green" data-symbol="Al">
+                    <section class="num"> &nbsp;13</section> 
+                    <p class="name">Al</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Si">
+                    <section class="num"> &nbsp;14</section> 
+                    <p class="name">Si</p>
+                </div>
+                <div class="div" id="Dblue" data-symbol="P">
+                    <section class="num"> &nbsp;15</section> 
+                    <p class="name">P</p>
+                </div>
+                <div class="div" id="Dblue" data-symbol="S">
+                    <section class="num"> &nbsp;16</section> 
+                    <p class="name">S</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Cl">
+                    <section class="num"> &nbsp;17</section> 
+                    <p class="name">Cl</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Ar">
+                    <section class="num"> &nbsp;18</section> 
+                    <p class="name">Ar</p>
+                </div>
+                <div class="div" id="red" data-symbol="K">
+                    <section class="num"> &nbsp;19</section> 
+                    <p class="name">K</p>
+                </div>
+                <div class="div" id="orange" data-symbol="Ca">
+                    <section class="num"> &nbsp;20</section> 
+                    <p class="name">Ca</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Sc">
+                    <section class="num"> &nbsp;21</section> 
+                    <p class="name">Sc</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ti">
+                    <section class="num"> &nbsp;22</section> 
+                    <p class="name">Ti</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="V">
+                    <section class="num"> &nbsp;23</section> 
+                    <p class="name">V</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Cr">
+                    <section class="num"> &nbsp;24</section> 
+                    <p class="name">Cr</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Mn">
+                    <section class="num"> &nbsp;25</section> 
+                    <p class="name">Mn</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Fe">
+                    <section class="num"> &nbsp;26</section> 
+                    <p class="name">Fe</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Co">
+                    <section class="num"> &nbsp;27</section> 
+                    <p class="name">Co</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ni">
+                    <section class="num"> &nbsp;28</section> 
+                    <p class="name">Ni</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Cu">
+                    <section class="num"> &nbsp;29</section> 
+                    <p class="name">Cu</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Zn">
+                    <section class="num"> &nbsp;30</section> 
+                    <p class="name">Zn</p>
+                </div>
+                <div class="div" id="green" data-symbol="Ga">
+                    <section class="num"> &nbsp;31</section> 
+                    <p class="name">Ga</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Ge">
+                    <section class="num"> &nbsp;32</section> 
+                    <p class="name">Ge</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="As">
+                    <section class="num"> &nbsp;33</section> 
+                    <p class="name">As</p>
+                </div>
+                <div class="div" id="Dblue" data-symbol="Se">
+                    <section class="num"> &nbsp;34</section> 
+                    <p class="name">Se</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Br">
+                    <section class="num"> &nbsp;35</section> 
+                    <p class="name">Br</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Kr">
+                    <section class="num"> &nbsp;36</section> 
+                    <p class="name">Kr</p>
+                </div>
+                <div class="div" id="red" data-symbol="Rb">
+                    <section class="num"> &nbsp;37</section> 
+                    <p class="name">Rb</p>
+                </div>
+                <div class="div" id="orange" data-symbol="Sr">
+                    <section class="num"> &nbsp;38</section> 
+                    <p class="name">Sr</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Y">
+                    <section class="num"> &nbsp;39</section> 
+                    <p class="name">Y</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Zr">
+                    <section class="num"> &nbsp;40</section> 
+                    <p class="name">Zr</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Nb">
+                    <section class="num"> &nbsp;41</section> 
+                    <p class="name">Nb</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Mo">
+                    <section class="num"> &nbsp;42</section> 
+                    <p class="name">Mo</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Tc">
+                    <section class="num"> &nbsp;43</section> 
+                    <p class="name">Tc</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ru">
+                    <section class="num"> &nbsp;44</section> 
+                    <p class="name">Ru</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Rh">
+                    <section class="num"> &nbsp;45</section> 
+                    <p class="name">Rh</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Pd">
+                    <section class="num"> &nbsp;46</section> 
+                    <p class="name">Pd</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ag">
+                    <section class="num"> &nbsp;47</section> 
+                    <p class="name">Ag</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Cd">
+                    <section class="num"> &nbsp;48</section> 
+                    <p class="name">Cd</p>
+                </div>
+                <div class="div" id="green" data-symbol="In">
+                    <section class="num"> &nbsp;49</section> 
+                    <p class="name">In</p>
+                </div>
+                <div class="div" id="green" data-symbol="Sn">
+                    <section class="num"> &nbsp;50</section> 
+                    <p class="name">Sn</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Sb">
+                    <section class="num"> &nbsp;51</section> 
+                    <p class="name">Sb</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Te">
+                    <section class="num"> &nbsp;52</section> 
+                    <p class="name">Te</p>
+                </div>
+                <div class="div" id="purple" data-symbol="I">
+                    <section class="num"> &nbsp;53</section> 
+                    <p class="name">I</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Xe">
+                    <section class="num"> &nbsp;54</section> 
+                    <p class="name">Xe</p>
+                </div>
+                <div class="div" id="red" data-symbol="Cs">
+                    <section class="num"> &nbsp;55</section> 
+                    <p class="name">Cs</p>
+                </div>
+                <div class="div" id="orange" data-symbol="Ba">
+                    <section class="num"> &nbsp;56</section> 
+                    <p class="name">Ba</p>
+                </div>
+                <div class="divS" id="lightB" >
+                    <section class="specialN"> &nbsp;57-71</section> 
+                    <p class="special">Lanthanoids</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Hf">
+                    <section class="num"> &nbsp;72</section> 
+                    <p class="name">Hf</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ta">
+                    <section class="num"> &nbsp;73</section> 
+                    <p class="name">Ta</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="W">
+                    <section class="num"> &nbsp;74</section> 
+                    <p class="name">W</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Re">
+                    <section class="num"> &nbsp;75</section> 
+                    <p class="name">Re</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Os">
+                    <section class="num"> &nbsp;76</section> 
+                    <p class="name">Os</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ir">
+                    <section class="num"> &nbsp;77</section> 
+                    <p class="name">Ir</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Pt">
+                    <section class="num"> &nbsp;78</section> 
+                    <p class="name">Pt</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Au">
+                    <section class="num"> &nbsp;79</section> 
+                    <p class="name">Au</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Hg">
+                    <section class="num"> &nbsp;80</section> 
+                    <p class="name">Hg</p>
+                </div>
+                <div class="div" id="green" data-symbol="Ti">
+                    <section class="num"> &nbsp;81</section> 
+                    <p class="name">Ti</p>
+                </div>
+                <div class="div" id="green" data-symbol="Pb">
+                    <section class="num"> &nbsp;82</section> 
+                    <p class="name">Pb</p>
+                </div>
+                <div class="div" id="green" data-symbol="Bi">
+                    <section class="num"> &nbsp;83</section> 
+                    <p class="name">Bi</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Po">
+                    <section class="num"> &nbsp;84</section> 
+                    <p class="name">Po</p>
+                </div>
+                <div class="div" id="purple" data-symbol="At">
+                    <section class="num"> &nbsp;85</section> 
+                    <p class="name">At</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Rn">
+                    <section class="num"> &nbsp;86</section> 
+                    <p class="name">Rn</p>
+                </div>
+                <div class="div" id="red" data-symbol="Fr">
+                    <section class="num"> &nbsp;87</section> 
+                    <p class="name">Fr</p>
+                </div>
+                <div class="div" id="orange" data-symbol="Ra">
+                    <section class="num"> &nbsp;88</section> 
+                    <p class="name">Ra</p>
+                </div>
+                <div class="divS" id="lightB">
+                    <section class="specialN"> &nbsp;89-103</section> 
+                    <p class="special">Actinoids</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Rf">
+                    <section class="num"> &nbsp;104</section> 
+                    <p class="name">Rf</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Db">
+                    <section class="num"> &nbsp;105</section> 
+                    <p class="name">Db</p>  
+                </div>
+                <div class="div" id="yellow" data-symbol="Sg">
+                    <section class="num"> &nbsp;106</section> 
+                    <p class="name">Sg</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Bh">
+                    <section class="num"> &nbsp;107</section> 
+                    <p class="name">Bh</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Hs">
+                    <section class="num"> &nbsp;108</section> 
+                    <p class="name">Hs</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Mt">
+                    <section class="num"> &nbsp;109</section> 
+                    <p class="name">Mt</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Ds">
+                    <section class="num"> &nbsp;110</section> 
+                    <p class="name">Ds</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Rg">
+                    <section class="num"> &nbsp;111</section> 
+                    <p class="name">Rg</p>
+                </div>
+                <div class="div" id="yellow" data-symbol="Cn">
+                    <section class="num"> &nbsp;112</section> 
+                    <p class="name">Cn</p>
+                </div>
+                <div class="div" id="green" data-symbol="Nh">
+                    <section class="num"> &nbsp;113</section> 
+                    <p class="name">Nh</p>
+                </div>
+                <div class="div" id="green" data-symbol="Fl">
+                    <section class="num"> &nbsp;114</section> 
+                    <p class="name">Fl</p>
+                </div>
+                <div class="div" id="green" data-symbol="Mc">
+                    <section class="num"> &nbsp;115</section> 
+                    <p class="name">Mc</p>
+                </div>
+                <div class="div" id="green" data-symbol="Lv">
+                    <section class="num"> &nbsp;116</section> 
+                    <p class="name">Lv</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Ts">
+                    <section class="num"> &nbsp;117</section> 
+                    <p class="name">Ts</p>
+                </div>
+                <div class="div" id="purple" data-symbol="Og">
+                    <section class="num"> &nbsp;118</section> 
+                    <p class="name">Og</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                </div>
+                <div class="div" id="lightB" data-symbol="La">
+                    <section class="num"> &nbsp;57</section> 
+                    <p class="name">La</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Ce">
+                    <section class="num"> &nbsp;58</section> 
+                    <p class="name">Ce</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Pr">
+                    <section class="num"> &nbsp;59</section> 
+                    <p class="name">Pr</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Nd">
+                    <section class="num"> &nbsp;60</section> 
+                    <p class="name">Nd</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Pm">
+                    <section class="num"> &nbsp;61</section> 
+                    <p class="name">Pm</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Sm">
+                    <section class="num"> &nbsp;62</section> 
+                    <p class="name">Sm</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Eu">
+                    <section class="num"> &nbsp;63</section> 
+                    <p class="name">Eu</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Gd">
+                    <section class="num"> &nbsp;64</section> 
+                    <p class="name">Gd</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Tb">
+                    <section class="num"> &nbsp;65</section> 
+                    <p class="name">Tb</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Dy">
+                    <section class="num"> &nbsp;66</section> 
+                    <p class="name">Dy</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Ho">
+                    <section class="num"> &nbsp;67</section> 
+                    <p class="name">Ho</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Er">
+                    <section class="num"> &nbsp;68</section> 
+                    <p class="name">Er</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Tm">
+                    <section class="num"> &nbsp;69</section> 
+                    <p class="name">Tm</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Yb">
+                    <section class="num"> &nbsp;70</section> 
+                    <p class="name">Yb</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Lu">
+                    <section class="num"> &nbsp;71</section> 
+                    <p class="name">Lu</p>
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="hide">
+                    A
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+                <div class="div" id="lightB" data-symbol="Ac">
+                    <section class="num"> &nbsp;89</section> 
+                    <p class="name">Ac</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Th">
+                    <section class="num"> &nbsp;90</section> 
+                    <p class="name">Th</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Pa">
+                    <section class="num"> &nbsp;91</section> 
+                    <p class="name">Pa</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="U">
+                    <section class="num"> &nbsp;92</section> 
+                    <p class="name">U</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Np">
+                    <section class="num"> &nbsp;93</section> 
+                    <p class="name">Np</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Pu">
+                    <section class="num"> &nbsp;94</section> 
+                    <p class="name">Pu</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Am">
+                    <section class="num"> &nbsp;95</section> 
+                    <p class="name">Am</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Cm">
+                    <section class="num"> &nbsp;96</section> 
+                    <p class="name">Cm</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Bk">
+                    <section class="num"> &nbsp;97</section> 
+                    <p class="name">Bk</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Cf">
+                    <section class="num"> &nbsp;98</section> 
+                    <p class="name">Cf</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Es">
+                    <section class="num"> &nbsp;99</section> 
+                    <p class="name">Es</p>
+                </div>
+                <div class="div" id="lightB" data-symbol="Fm">
+                    <section class="num"> &nbsp;100</section>
+                    <p class="name">Fm</p> 
+                </div>
+                <div class="div" id="lightB" data-symbol="Md">
+                    <section class="num"> &nbsp;101</section>
+                    <p class="name">Md</p> 
+                </div>
+                <div class="div" id="lightB" data-symbol="No">
+                    <section class="num"> &nbsp;102</section>
+                    <p class="name">No</p> 
+                </div>
+                <div class="div" id="lightB" data-symbol="Lr">
+                    <section class="num"> &nbsp;103</section>
+                    <p class="name">Lr</p> 
+                </div>
+                <div class="div" id="hide">
+                    B
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

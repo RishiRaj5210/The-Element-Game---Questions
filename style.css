@@ -1,0 +1,156 @@
+html {
+    font-family:"Quantico", sans-serif;
+    font-style: normal;
+    background-image: url("bck..png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html {
+    background-color: rgb(12, 12, 12);
+}
+/* For every element box */
+.div {
+    border: 1px solid rgb(255, 255, 255);
+    width: 3rem;
+    height: 3rem;
+    margin: 2px;
+    border-radius: 2.5px;
+    display: flex;
+    color: white;
+    transition: transform 140ms linear;
+}
+
+/* For parent box*/
+.divMain {
+    display: flex;
+    width: 63rem;
+    height: 30rem;
+    flex-wrap: wrap;
+}
+
+/* Hidden boxes not to be shown*/
+#hide {
+    visibility: hidden;
+}
+
+/* Hover animation*/
+.div:hover {
+    transform: scale(1.45);
+    z-index: 9999;
+    background-color: rgb(12,12,12);
+}
+
+/* Customising the number of each element*/
+.num {
+    font-size: 10px;
+    position: relative;
+    top: 5px;
+}
+/* Customising the name of each element*/
+.name {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.special {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    font-size:9px;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialN {
+    position: absolute;
+    font-size: 10px;
+}
+
+.divS {
+    border: 1px solid rgb(255, 255, 255);
+    width: 3rem;
+    height: 3rem;
+    margin: 2px;
+    border-radius: 2.5px;
+    display: flex;
+    color: white;
+    transition: transform 140ms linear;
+}
+
+#Dblue {
+    background-color: darkblue;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orangered;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#lightB {
+    background-color:blue;
+}
+
+#green {
+    background-color:forestgreen;
+}
+
+#yellow {
+    background-color: #eec003;
+}
+
+.question {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.periodicDiv {
+    display: block;
+    justify-items: center;
+    margin-left: 200px;
+}
+
+.button {
+    font-family:"Quantico", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 20%;
+    background-color: blue;
+    box-shadow: 0 0 40px 15px violet,
+    0 0 50px 5px #02f246,
+    0 0 45px 10px blue,
+    0 0 40px 15px #02ffa4;
+    color: white;
+    transition: transform 0.1s linear;
+}
+
+.button:hover {
+    transform: scale(1.15);
+}
+
+.button:active {
+    transform: scale(1);
+}
+
+.feedback {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
