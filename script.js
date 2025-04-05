@@ -1,4 +1,6 @@
 // Question list
+let score = 0;
+
 const originalQuestions = [
     {
       question: "What is the chemical symbol for Hydrogen?",
@@ -78,7 +80,7 @@ const originalQuestions = [
     }
   
     if (currentIndex >= questions.length) {
-      qBox.textContent = "Quiz Complete!!!!!";
+      qBox.textContent = `Quiz Complete!!!!! You scored ${score} out of ${questions.length}`;
       feedback.textContent = "";
       nextBtn.disabled = true;
       console.log("All questions complete.");
@@ -118,6 +120,7 @@ const originalQuestions = [
       feedback.textContent = "Yay!!! You Got It Right";
       feedback.style.color = "white";
       console.log("Correct answer");
+      score++; 
     } else {
       feedback.textContent = `Wrong. The Correct Answer Is ${correctAnswer}`;
       feedback.style.color = "white";
