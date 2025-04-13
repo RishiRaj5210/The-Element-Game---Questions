@@ -1,9 +1,15 @@
 html {
     font-family:"Quantico", sans-serif;
     font-style: normal;
-    background-image: url("bck..png") ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(
+        50deg,
+        #2c0066,   /* deep purple */
+        #a100ff,   /* magenta */
+        #ff4fcb,   /* pink */
+        #008cff    /* blue */
+      );
+      overflow: hidden;
+      background-repeat: no-repeat;
 }
 
 html {
@@ -120,6 +126,7 @@ html {
     display: block;
     justify-items: center;
     margin-left: 200px;
+    height: 2000px;
 }
 
 .button {
